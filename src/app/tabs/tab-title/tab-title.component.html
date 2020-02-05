@@ -1,0 +1,8 @@
+<ng-template #titleTemplate>
+  <div 
+    class="tabs__title" 
+    [class.tabs__title--active]="modifierClassActive"
+    (click)="handleClick()">
+    <ng-content></ng-content>
+  </div> 
+</ng-template>

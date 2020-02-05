@@ -1,0 +1,16 @@
+<div class="tabs__titles">
+  <ng-container 
+    *ngFor="let title of titles">
+    <ng-container 
+      *ngTemplateOutlet="title">
+    </ng-container>
+  </ng-container>
+</div>
+<div>
+  <ng-container 
+    *ngIf="content">
+    <ng-container
+      *ngTemplateOutlet="content">
+    </ng-container>
+  </ng-container>
+</div>
